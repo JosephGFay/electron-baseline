@@ -1,11 +1,10 @@
 import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client'
+const container = document.getElementById('app')
+const root = createRoot(container!)
 
-import VMCard from './components/VMCard';
-function render() {
-    ReactDOM.render(<>
-        <div className='bg-zinc-900'>
-        </div>
-    </>, document.body);
-}
-
-render();
+root.render(
+    <div>
+        <h1>hello world</h1>
+    </div>
+)
